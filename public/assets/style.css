@@ -1,0 +1,48 @@
+/* #28282B #7D7098 #E6E6FA*/
+
+body{
+    font-family:'Space Grotesk';
+    background-color: #28282B;
+}
+.text{
+    color: #E6E6FA;
+}
+#title{
+    font-size: 500%;
+}
+#lm_text{
+    color: #7D7098
+}
+#navbar_logo{
+    filter:drop-shadow(0 0 10px #7D7098);
+}
+#navbar{
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+    border: 1px solid #F2F3F4 ;
+    display: flex;
+}
+.navbar_option{
+    float: right;
+    height: 100%;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#mainPage{
+    display: flex;
+    
+    width: 100%;
+}
+
+#logo{
+    filter: drop-shadow(0 0 10px #7D7098);
+    margin-left: 10%;
+}
+#vct{
+    filter: brightness(0) invert(1);
+}
