@@ -32,13 +32,11 @@ body{
     flex-direction: row;
     align-items: center;
 }
-
 #mainPage{
     display: flex;
     
     width: 100%;
 }
-
 #logo{
     filter: drop-shadow(0 0 10px #7D7098);
     margin-left: 10%;
