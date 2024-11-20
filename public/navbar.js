@@ -1,3 +1,6 @@
+document.getElementById("navbar_logo").addEventListener("click", function(){
+    window.location.href = 'index.html'
+})
 document.getElementById("home").addEventListener("click", function(){
     window.location.href = 'index.html'
 })
