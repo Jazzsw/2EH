@@ -128,3 +128,18 @@ body{
     width: 15vw;                
     height: auto;                   
   }
+
+
+/* news page */
+.iframe-container {
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly between the iframes */
+    align-items: center; /* Aligns iframes vertically centered */
+    flex-wrap: nowrap; /* Ensures the iframes don't wrap to the next line */
+}
+
+iframe {
+    width:30vw;
+    height: 60vh;
+    border: none; /* Optional: Remove the border from the iframe */
+}
