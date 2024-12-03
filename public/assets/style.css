@@ -3,6 +3,8 @@
 body{
     font-family:'Space Grotesk';
     background-color: #28282B;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .text{
@@ -69,7 +71,7 @@ body{
     animation: scroll 20s linear infinite;
   }
 .image-track img {
-    width: 20vw;
+    width: 20vw; 
     height: auto;
 }
 
@@ -100,25 +102,29 @@ body{
     justify-content: center;
 }
 
-#mibr_logo{
-    margin-top: 50%;
-}
 
 
-div.scrollmenu {
-    background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
+
+/* teams page */
+#team_logo_section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    flex-wrap: wrap;                
+    padding: 20px;
   }
   
-  div.scrollmenu a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
+  .logo_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;                  
+    margin: 0 10px;               
+    min-width: 150px;               
   }
-  
-  div.scrollmenu a:hover {
-    background-color: #777;
+
+.team_logo{
+    filter:brightness(0) invert(1);
+    width: 15vw;                
+    height: auto;                   
   }
