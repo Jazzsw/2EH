@@ -136,6 +136,8 @@ body{
     justify-content: space-around; 
     align-items: center; 
     flex-wrap: nowrap;
+}::-webkit-scrollbar {
+    width: 1px;
 }
 
 iframe {
