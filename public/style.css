@@ -1,0 +1,162 @@
+/* #28282B #7D7098 #E6E6FA*/
+
+body{
+    font-family:'Space Grotesk';
+    background-color: #28282B;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.text{
+    color: #E6E6FA;
+}
+#title{
+    font-size: 500%;
+}
+#lm_text{
+    color: #7D7098
+}
+#navbar_logo{
+    filter:drop-shadow(0 0 10px #7D7098);
+    height: 90%;
+}
+#navbar{
+    width: 100%;
+    height: 75px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px #0C0E0C;
+    /* border: 1px solid #F2F3F4; */
+    display: flex;
+}
+.navbar_option{
+    float: right;
+    height: 100%;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#mainPage{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#logo{
+    filter: drop-shadow(0 0 10px #7D7098);
+    margin-left: 10%;
+    justify-self: flex-end;
+    flex-grow: 1;
+}
+#vct{
+    filter: brightness(0) invert(1);
+}
+
+#tag{
+    margin-top: -3%;
+    align-self: center;
+    width: 30vw;
+}
+
+#logo_section{
+    width: 100vw;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 5%; 
+}
+.track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+  }
+.image-track img {
+    width: 20vw; 
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+.logo_img{
+    filter:brightness(0) invert(1);
+    width: 20vw;
+    height: auto;
+    object-fit: contain;
+}
+
+#loadingScreen{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    background-color: #28282B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* teams page */
+#team_logo_section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    flex-wrap: wrap;                
+    padding: 20px;
+  }
+  
+  .logo_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;                  
+    margin: 0 10px;               
+    min-width: 150px;               
+  }
+
+.team_logo{
+    filter:brightness(0) invert(1);
+    width: 15vw;                
+    height: auto;                   
+  }
+
+
+/* news page */
+.iframe-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: nowrap;
+}::-webkit-scrollbar {
+    width: 1px;
+}
+
+iframe {
+    width:30vw;
+    height: 60vh;
+    border: none; 
+}
+
+#essay_container{
+    content: center;
+}
+
+#essay{
+    width: 90vw;
+    height: 60vh;
+    overflow: auto;
+    color: #E6E6FA;
+    overflow: auto;
+    line-height: 2;
+}::-webkit-scrollbar {
+    width: 6px;
+}
